@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+</head>
+<body>
+	<p></p>
+	<script type="text/javascript">
+		let d = new Date();
+		const todaysDate = document.getElementsByTagName('p')[0];
+		const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+		todaysDate.innerHTML = `Today is ${days[d.getDay()]} ${d.getMonth() + 1} - ${d.getDate()}`;				
+	</script>
+</body>
+</html>
